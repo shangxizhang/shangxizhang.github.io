@@ -7,18 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>About | Shangxi Zhang&#39;s Blog</title>
+  <title>Zodiac Girlfriends Problem | Shangxi Zhang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I am a third year Math/CS major in UChicago.I am interested in stochastic calculus, machine learning and computer graphics.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="One day, a girl ask me: “How many ex-girlfriends do you have?” I said: “Plenty. I have exs for every Zodiac sign.”  That is a joke. However, it is interesting to discuss how many exs do I have based o">
+<meta name="keywords" content="math">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zodiac Girlfriends Problem">
+<meta property="og:url" content="http://yoursite.com/2017/08/10/Zodiac-Girlfriend-Problem/index.html">
 <meta property="og:site_name" content="Shangxi Zhang's Blog">
-<meta property="og:description" content="I am a third year Math/CS major in UChicago.I am interested in stochastic calculus, machine learning and computer graphics.">
-<meta property="og:updated_time" content="2017-10-10T05:37:19.348Z">
+<meta property="og:description" content="One day, a girl ask me: “How many ex-girlfriends do you have?” I said: “Plenty. I have exs for every Zodiac sign.”  That is a joke. However, it is interesting to discuss how many exs do I have based o">
+<meta property="og:updated_time" content="2017-10-10T05:57:15.803Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="I am a third year Math/CS major in UChicago.I am interested in stochastic calculus, machine learning and computer graphics.">
+<meta name="twitter:title" content="Zodiac Girlfriends Problem">
+<meta name="twitter:description" content="One day, a girl ask me: “How many ex-girlfriends do you have?” I said: “Plenty. I have exs for every Zodiac sign.”  That is a joke. However, it is interesting to discuss how many exs do I have based o">
   
     <link rel="alternative" href="/atom.xml" title="Shangxi Zhang&#39;s Blog" type="application/atom+xml">
   
@@ -152,27 +153,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-Zodiac-Girlfriend-Problem" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      About
+      Zodiac Girlfriends Problem
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2017-05-07T05:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>05-07-2017</time>
+        <a href="/2017/08/10/Zodiac-Girlfriend-Problem/" class="archive-article-date">
+  	<time datetime="2017-08-10T05:39:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>08-10-2017</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I am a third year Math/CS major in UChicago.<br>I am interested in stochastic calculus, machine learning and computer graphics.</p>
+        <p>One day, a girl ask me: “How many ex-girlfriends do you have?” I said: “Plenty. I have exs for every Zodiac sign.” </p>
+<p>That is a joke. However, it is interesting to discuss how many exs do I have based on this condition. In other word, I want to know the mathematical expectation of the number of girlfriends that I need to have in order to collect 12 zodiac signs, given that I do not ask for their zodiac signs beforehand.</p>
+<p>The lower bound for the problem is obviously 12, while the upper bound is infinity–every girl I would meet may have the same zodiac sign!</p>
+<p>Now let’s consider the expectation. From probability theory, we know that the expection of trials for a event to happen with probability  \( p \) is \( \frac{1}{p} \), which is called the geometric distribution.</p>
+<p>Then, assume I have exs with \(i\) kinds of zodiac signs, and now I meet a girl with different zodiac sign from everyone else. The probability of this event is  \( \frac{12 - i}{12} \). Then, we have<br>$$E_i(X) = \frac{1}{p<em>i} = \frac{12 - i}{12}$$<br>Then, we can find the expectation<br>$$E(X) = \sum\limits</em>{i = 0}^{11} E_i(X) =37.238$$</p>
+<p>Quite impressive, isn’t it?</p>
 
       
 
@@ -181,6 +187,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">math</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -192,6 +209,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/05/09/HashTable/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HashTable in C++
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 
 
@@ -224,7 +255,7 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

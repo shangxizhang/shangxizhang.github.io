@@ -173,8 +173,8 @@
         <p>One day, a girl ask me: “How many ex-girlfriends do you have?” I said: “Plenty. I have exs for every Zodiac sign.” </p>
 <p>That is a joke. However, it is interesting to discuss how many exs do I have based on this condition. In other word, I want to know the mathematical expectation of the number of girlfriends that I need to have in order to collect 12 zodiac signs, given that I do not ask for their zodiac signs beforehand.</p>
 <p>The lower bound for the problem is obviously 12, while the upper bound is infinity–every girl I would meet may have the same zodiac sign!</p>
-<p>Now let’s consider the expectation. From probability theory, we know that the expection of trials for a event to happen with probability  \( p \) is \( \frac{1}{p} \), which is called the geometric distribution.</p>
-<p>Then, assume I have exs with \(i\) kinds of zodiac signs, and now I meet a girl with different zodiac sign from everyone else. The probability of this event is  \( \frac{12 - i}{12} \). Then, we have<br>$$E_i(X) = \frac{1}{p<em>i} = \frac{12 - i}{12}$$<br>Then, we can find the expectation<br>$$E(X) = \sum\limits</em>{i = 0}^{11} E_i(X) =37.238$$</p>
+<p>Now let’s consider the expectation. From probability theory, we know that the expection of number of trials for a event to happen with probability  \( p \) is \( \dfrac{1}{p} \), which is called the geometric distribution.</p>
+<p>Then, assume I have exs with \(i\) kinds of zodiac signs, and now I meet a girl with different zodiac sign from everyone else. The probability of this event is  \( \dfrac{12 - i}{12} \). Then, we have the expectation to be \(\dfrac{12}{12 - i} \).<br>Then, we sum up \(i\) and total expectation \( \sum\limits_{i = 0}^{11} \dfrac{12}{12 - i} =37.238 \)</p>
 <p>Quite impressive, isn’t it?</p>
 
       
